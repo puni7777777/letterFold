@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    --height-of-container: 17rem;
+    --width-of-container:30rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: var(--width-of-container);
+    height: var(--height-of-container);
+    border: .2rem solid white;
+    border-radius: .7rem;
+}
+
+.station_From, .station_To{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.station_1, .station_2{
+    width: 25rem;
+    height: 3rem;
+    background: transparent;
+    border: .2rem solid white;
+    border-radius: .5rem;
+    padding-left: 1rem;
+    background-color: black;
+}
+
+.get_details{
+    background: transparent;
+    border:none;
+    cursor: pointer;
+}

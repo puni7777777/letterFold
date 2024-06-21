@@ -1,0 +1,38 @@
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: 1px solid black;
+}
+
+.parent1{
+    height: 0;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 1s;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+
+.parent3{
+    height: 56px;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotateY(-90deg);
+    transform-origin: center;
+}
+
+.container:hover .parent1{
+    height: 111px;
+}
+
+.container:hover .parent3{
+    transform: rotateX(0deg);
+    height: 111px;
+}
